@@ -4,7 +4,7 @@ body{
 
 #container{
     background-color: black;
-    border: 5px solid #c9f97c;
+    border: 5px solid #a7df4e;
     height: 350px;
     width: 750px;
     margin: auto;
@@ -23,10 +23,10 @@ p{
 
 #btn{
     margin: 25px auto auto 5px;
-    background-color: rgb(159, 245, 98);
+    background-color: rgb(244, 223, 41);
 }
 #outPutText{
-    color: rgb(213, 107, 229);
+    color: rgb(210, 132, 236);
     font-size: 35;
 
 }

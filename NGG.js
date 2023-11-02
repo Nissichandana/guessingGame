@@ -10,9 +10,10 @@ function initPage() {
     outPut = document.getElementById('outPutText');
     attemNumber = document.getElementById('attempts')
     number = [Math.floor(Math.random() * 10) + 1];
-    console.log("Number inside init function: "+number);
+    console.log("Actual Number inside init function: "+number);
     noOfAttempts = 3;
     outPut.innerHTML = "Enter A Number"
+    attemNumber.innerHTML = "You have 3 attempts to guess the right number";
     userInput.value = "";
     userInput.focus();
     //location.reload();
@@ -36,25 +37,34 @@ btn.addEventListener('click', function guessNum() {
 
     if (noOfAttempts > 0) {
         console.log("number: " + number);
-        console.log(input);
+        console.log("Entered Numebr: "+input+"  Actual Num: "+number);
         if (isNaN(input) || input < 1 || input > 10) {
+            console.log("2....");
             outPut.innerHTML = "Please Enter a Valid Number between 1 and 10";
             noOfAttempts--;
             attemNumber.innerHTML = "You have " + noOfAttempts + " attempts to guess the right number";
 
         } else if (input == number) {
+            console.log("3....");
             outPut.innerHTML = `You guessed it right, the number was ${number} !`;
             noOfAttempts--;
-            attemNumber.innerHTML = "YEPEEE....";
+            attemNumber.innerHTML = "YEPEEE....the number was " + number + " ! ";
+            setTimeout(()=> {
+                initPage();
+                //document.getElementById("result").innerHTML = "Hello, I am here";
+             }
+             ,5000);
             guessed = true;
-            initPage();
+            
 
-        } else if (input < number) {
+        } else if (parseInt(input) < parseInt(number)) {
+            console.log("4....");
             outPut.innerHTML = `you guessed too low!`;
             noOfAttempts--;
             attemNumber.innerHTML = "You have " + noOfAttempts + " attempts to guess the right number";
-            
-        } else if (input > number) {
+
+        } else if (parseInt(input) > parseInt(number)) {
+            console.log("5....");
             outPut.innerHTML = 'you guessed too high';
             noOfAttempts--;
             attemNumber.innerHTML = "You have " + noOfAttempts + " attempts to guess the right number";
@@ -62,7 +72,11 @@ btn.addEventListener('click', function guessNum() {
     }
     if (noOfAttempts == 0 && !guessed) {
         attemNumber.innerHTML = "You are out of attempts. Original number was " + number;
-        initPage();
+        setTimeout(()=> {
+            initPage();
+            //document.getElementById("result").innerHTML = "Hello, I am here";
+         }
+         ,5000);
     }
 }
 
