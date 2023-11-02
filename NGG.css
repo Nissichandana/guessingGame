@@ -1,0 +1,57 @@
+body{
+    background-image:url("bg-nu-light.jpg") ;
+}
+
+#container{
+    background-color: black;
+    border: 5px solid #c9f97c;
+    height: 350px;
+    width: 750px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+
+p{
+    color: aliceblue;
+    font-size: 25px;
+}
+#input{
+    width: 100px;
+    margin: 25px auto;
+}
+
+#btn{
+    margin: 25px auto auto 5px;
+    background-color: rgb(159, 245, 98);
+}
+#outPutText{
+    color: rgb(213, 107, 229);
+    font-size: 35;
+
+}
+#heading{
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(237, 241, 244);
+    text-align: center;
+    border-style: solid;
+    border-color: greenyellow;
+    background-color: black;
+
+}
+
+#attempts{
+    font-size: 27px ;
+    color: chartreuse;
+    font-weight: bold;
+}
+
+#restartBtn{
+    position: absolute;
+    top: auto;
+
+
+    
+
+}
