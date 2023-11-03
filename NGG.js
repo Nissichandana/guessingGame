@@ -65,13 +65,13 @@ button.addEventListener('click', function numGuess() {
 
         } else if (parseInt(input) < parseInt(rndNumber)) {
             console.log("4....");
-            outPut.innerHTML = `you guessed too low!`;
+            outPut.innerHTML = `your guess is low !`;
             noOfAttempts--;
             attemNumber.innerHTML = "You have " + noOfAttempts + " attempts to guess the right number";
 
         } else if (parseInt(input) > parseInt(rndNumber)) {
             console.log("5....");
-            outPut.innerHTML = 'you guessed too high';
+            outPut.innerHTML = 'your guess is high !';
             noOfAttempts--;
             attemNumber.innerHTML = "You have " + noOfAttempts + " attempts to guess the right number";
         }

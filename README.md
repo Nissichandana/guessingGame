@@ -2,7 +2,7 @@
 
 # instructions
 
-User has three attempts to guess the number between 1-10.  Player enters a number and click the submit button, then the computer checks the number with the random generated number using and matches it and gives the output if the number is too low or too high. If the input number mathches with the random generated number then the player wins the game. If the player couldn't guess the number in three atempts then a message displays saying you are out of your attempts and gives the number. If the user enters any number out of range an error message will be displayed and the player loses an attempt. I have a Timeout() method to refresh the page after 5 seconds instead of reset button. I also added Trigger a Button Click on Enter to have an access to both sumbit and Enter button on the keyboard. The player has an option of 
+User has three attempts to guess the number between 1-10.  Player enters a number and click the submit button, then the computer checks the number with the random generated number using and matches it and gives the output if the number is too low or too high. If the input number mathches with the random generated number then the player wins the game. If the player couldn't guess the number in three atempts then a message displays saying you are out of your attempts and gives the number. If the user enters any number out of range an error message will be displayed and the player loses an attempt. I have a Timeout() method to refresh the page after 5 seconds when the player wins the game or when the player out of attempts. Also added Trigger a Button Click on Enter to have an access to both sumbit button on the screen and Enter button on the keyboard. The player has an option of 
 
 
 # wireframe
