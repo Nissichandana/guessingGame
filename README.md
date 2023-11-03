@@ -8,7 +8,7 @@ User has three attempts to guess the number between 1-10.  Player enters a numbe
 # wireframe
 ![Alt text](wireframe.jpeg)
 # flowchart
-(flowchart-pic.jpeg)
+![Alt text](flowchart-pic.jpeg)
 # image
 ![Alt text](bg-nu-light-1.jpg)
 
