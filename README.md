@@ -13,6 +13,7 @@ User has three attempts to guess the number between 1-10.  Player enters a numbe
 ![Alt text](bg-nu-light-1.jpg)
 
 # live site link
+https://nissichandana.github.io/guessingGame/
 
 # Resource
 
